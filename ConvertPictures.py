@@ -36,8 +36,8 @@ def process_image(img_path, output_base_dir_path):
         return f"Error processing {img_path} (Destination: {avif_name}): {e}"
 
 def main():
-    base_dir_path = '/Users/kanae/OneDrive/画像/VRChat/' #ここを自分のVRChatディレクトリ名に変えてください。
-    output_base_dir_path = '/Users/kanae/OneDrive/画像/VRChat/Converted/' #ここを変換後の画像を保存したいディレクトリ名に変えてください。
+    base_dir_path = '/Users/name/OneDrive/画像/VRChat/' #ここを自分のVRChatディレクトリ名に変えてください。
+    output_base_dir_path = '/Users/name/OneDrive/画像/VRChat/Converted/' #ここを変換後の画像を保存したいディレクトリ名に変えてください。
     years = range(2020, 2031)
     months = range(1, 13)
     max_workers = os.cpu_count() // 2 if os.cpu_count() else 2
